@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="ERD Klaim Clustering" id="ERD_Klaim_Clustering">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2100" pageHeight="1485" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <!-- User -->
+        <mxCell id="2" value="User&#xa;user_id (PK)&#xa;email&#xa;password&#xa;role" style="swimlane;html=1;rounded=1;whiteSpace=wrap;fillColor=#e3f2fd;" vertex="1" parent="1">
+          <mxGeometry x="60" y="100" width="150" height="110" as="geometry"/>
+        </mxCell>
+        <!-- Data_Klaim -->
+        <mxCell id="3" value="Data_Klaim&#xa;klaim_id (PK)&#xa;nama_peserta&#xa;usia_peserta&#xa;jenis_pekerjaan&#xa;jenis_klaim&#xa;lokasi_cabang&#xa;waktu_upload&#xa;user_id (FK)" style="swimlane;html=1;rounded=1;whiteSpace=wrap;fillColor=#fffde7;" vertex="1" parent="1">
+          <mxGeometry x="270" y="60" width="200" height="160" as="geometry"/>
+        </mxCell>
+        <!-- Clustering -->
+        <mxCell id="4" value="Clustering&#xa;clustering_id (PK)&#xa;metode&#xa;tanggal_proses&#xa;jumlah_cluster&#xa;user_id (FK)" style="swimlane;html=1;rounded=1;whiteSpace=wrap;fillColor=#e8f5e9;" vertex="1" parent="1">
+          <mxGeometry x="540" y="20" width="180" height="120" as="geometry"/>
+        </mxCell>
+        <!-- Cluster -->
+        <mxCell id="5" value="Cluster&#xa;cluster_id (PK)&#xa;clustering_id (FK)&#xa;nama_cluster&#xa;centroid" style="swimlane;html=1;rounded=1;whiteSpace=wrap;fillColor=#fce4ec;" vertex="1" parent="1">
+          <mxGeometry x="760" y="70" width="150" height="120" as="geometry"/>
+        </mxCell>
+        <!-- Report -->
+        <mxCell id="6" value="Report&#xa;report_id (PK)&#xa;clustering_id (FK)&#xa;tanggal_pembuatan&#xa;isi_report" style="swimlane;html=1;rounded=1;whiteSpace=wrap;fillColor=#f3e5f5;" vertex="1" parent="1">
+          <mxGeometry x="540" y="180" width="180" height="110" as="geometry"/>
+        </mxCell>
+        <!-- ClusterDetail -->
+        <mxCell id="7" value="ClusterDetail&#xa;detail_id (PK)&#xa;klaim_id (FK)&#xa;cluster_id (FK)" style="swimlane;html=1;rounded=1;whiteSpace=wrap;fillColor=#e1f5fe;" vertex="1" parent="1">
+          <mxGeometry x="960" y="120" width="170" height="90" as="geometry"/>
+        </mxCell>
+        <!-- Relationships -->
+        <mxCell id="8" style="endArrow=none;html=1;strokeWidth=2;" edge="1" source="2" target="3" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="120" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" style="endArrow=none;html=1;strokeWidth=2;" edge="1" source="3" target="4" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" style="endArrow=none;html=1;strokeWidth=2;" edge="1" source="4" target="5" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" style="endArrow=none;html=1;strokeWidth=2;" edge="1" source="4" target="6" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" style="endArrow=none;html=1;strokeWidth=2;" edge="1" source="5" target="7" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" style="endArrow=none;html=1;strokeWidth=2;" edge="1" source="3" target="7" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
