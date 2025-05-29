@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="ERD Klaim Clustering Classic" id="ERD_Klaim_Clustering_Classic">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2100" pageHeight="1485" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <!-- Entitas User -->
+        <mxCell id="2" value="User" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#212d40;fontColor=#fff;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <!-- Atribut User -->
+        <mxCell id="3" value="user_id (PK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="10" y="40" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="email" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="10" y="130" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="password" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="140" y="40" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="role" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="140" y="130" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <!-- Hubungan User-Data_Klaim -->
+        <mxCell id="7" value="Menginputkan" style="rhombus;whiteSpace=wrap;html=1;fillColor=#b4d2e7;" vertex="1" parent="1">
+          <mxGeometry x="180" y="120" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <!-- Entitas Data_Klaim -->
+        <mxCell id="8" value="Data_Klaim" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#212d40;fontColor=#fff;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="300" y="80" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <!-- Atribut Data_Klaim -->
+        <mxCell id="9" value="klaim_id (PK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="260" y="30" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="nama_peserta" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="260" y="140" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="usia_peserta" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="420" y="30" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" value="jenis_pekerjaan" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="470" y="80" width="110" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" value="jenis_klaim" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="380" y="140" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="14" value="lokasi_cabang" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="410" y="100" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" value="waktu_upload" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="470" y="160" width="110" height="30" as="geometry"/>
+        </mxCell>
+        <!-- Entitas Clustering -->
+        <mxCell id="16" value="Clustering" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#212d40;fontColor=#fff;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="300" y="220" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <!-- Atribut Clustering -->
+        <mxCell id="17" value="clustering_id (PK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="200" y="240" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="18" value="metode" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="440" y="220" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="19" value="tanggal_proses" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="440" y="260" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="20" value="jumlah_cluster" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="440" y="320" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <!-- Hubungan Clustering-Cluster -->
+        <mxCell id="21" value="Menghasilkan" style="rhombus;whiteSpace=wrap;html=1;fillColor=#b4d2e7;" vertex="1" parent="1">
+          <mxGeometry x="560" y="190" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <!-- Entitas Cluster -->
+        <mxCell id="22" value="Cluster" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#212d40;fontColor=#fff;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="690" y="190" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <!-- Atribut Cluster -->
+        <mxCell id="23" value="cluster_id (PK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="740" y="150" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="24" value="clustering_id (FK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="820" y="210" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="25" value="nama_cluster" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="770" y="250" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="26" value="centroid" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="890" y="190" width="90" height="30" as="geometry"/>
+        </mxCell>
+        <!-- Hubungan Cluster-Data_Klaim -->
+        <mxCell id="27" value="Beranggota" style="rhombus;whiteSpace=wrap;html=1;fillColor=#b4d2e7;" vertex="1" parent="1">
+          <mxGeometry x="610" y="120" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <!-- Entitas Report -->
+        <mxCell id="28" value="Report" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#212d40;fontColor=#fff;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="500" y="300" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <!-- Atribut Report -->
+        <mxCell id="29" value="report_id (PK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="620" y="300" width="110" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="30" value="clustering_id (FK)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="620" y="340" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="31" value="tanggal_pembuatan" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="500" y="350" width="110" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="32" value="isi_report" style="ellipse;whiteSpace=wrap;html=1;fillColor=#35496e;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="500" y="390" width="110" height="30" as="geometry"/>
+        </mxCell>
+        <!-- Hubungan Clustering-Report -->
+        <mxCell id="33" value="Mendokumentasi" style="rhombus;whiteSpace=wrap;html=1;fillColor=#b4d2e7;" vertex="1" parent="1">
+          <mxGeometry x="470" y="230" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <!-- Edges (Relasi) -->
+        <mxCell id="34" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="2" target="3"/>
+        <mxCell id="35" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="2" target="4"/>
+        <mxCell id="36" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="2" target="5"/>
+        <mxCell id="37" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="2" target="6"/>
+        <mxCell id="38" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="8" target="9"/>
+        <mxCell id="39" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="8" target="10"/>
+        <mxCell id="40" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="8" target="11"/>
+        <mxCell id="41" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="8" target="12"/>
+        <mxCell id="42" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="8" target="13"/>
+        <mxCell id="43" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="8" target="14"/>
+        <mxCell id="44" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="8" target="15"/>
+        <mxCell id="45" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="16" target="17"/>
+        <mxCell id="46" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="16" target="18"/>
+        <mxCell id="47" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="16" target="19"/>
+        <mxCell id="48" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="16" target="20"/>
+        <mxCell id="49" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="22" target="23"/>
+        <mxCell id="50" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="22" target="24"/>
+        <mxCell id="51" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="22" target="25"/>
+        <mxCell id="52" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="22" target="26"/>
+        <mxCell id="53" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="28" target="29"/>
+        <mxCell id="54" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="28" target="30"/>
+        <mxCell id="55" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="28" target="31"/>
+        <mxCell id="56" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeWidth=2;" edge="1" parent="1" source="28" target="32"/>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
